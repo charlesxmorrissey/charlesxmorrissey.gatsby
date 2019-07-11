@@ -1,0 +1,76 @@
+{
+  "name": "charles-x-morrissey-github-page",
+  "description": "Charles X. Morrissey - holding page 2019",
+  "author": "Charles X. Morrissey <hi@charles-x.com>",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charlesxmorrissey/charlesxmorrissey.github.io.git"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "format": "prettier --write '**/*.{js,json}'",
+    "lint": "eslint --ext .js ./src && stylelint ./src/styles",
+    "serve": "gatsby serve",
+    "start": "gatsby develop"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "yarn format",
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "gatsby": "^2.4.2",
+    "gatsby-node-helpers": "^0.3.0",
+    "gatsby-plugin-eslint": "^2.0.5",
+    "gatsby-plugin-manifest": "^2.2.1",
+    "gatsby-plugin-offline": "^2.2.1",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-resolve-src": "^2.0.0",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-plugin-svg-sprite": "^2.0.1",
+    "gatsby-source-filesystem": "^2.0.38",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-typography": "^0.16.19",
+    "styled-components": "^4.2.0",
+    "styled-normalize": "^8.0.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "gh-pages": "^2.0.1",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.17.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0"
+  }
+}
