@@ -11,6 +11,7 @@ const siteMetadata = {
 }
 
 module.exports = {
+  pathPrefix: `/charlesxmorrissey.github.io.git`,
   siteMetadata,
 
   plugins: [
