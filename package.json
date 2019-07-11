@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public --branch gh-pages",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write '**/*.{js,json}'",
     "lint": "eslint --ext .js ./src && stylelint ./src/styles",
     "serve": "gatsby serve",
