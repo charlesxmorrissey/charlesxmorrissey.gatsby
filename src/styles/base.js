@@ -4,6 +4,7 @@ import { media, rem } from 'utils/helpers'
 export const Block = styled.div`
   padding-left: ${rem(20)};
   padding-right: ${rem(20)};
+
   ${media.medium`
     padding-left: ${rem(40)};
     padding-right: 0;

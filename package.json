@@ -16,7 +16,9 @@
     "build": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write '**/*.{js,json}'",
-    "lint": "eslint --ext .js ./src && stylelint ./src/styles",
+    "lint:js": "eslint --ext .js ./src",
+    "lint:styles": "stylelint ./src/styles",
+    "lint": "yarn lint:js && yarn lint:styles",
     "serve": "gatsby serve",
     "start": "gatsby develop"
   },
@@ -48,7 +50,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-typography": "^0.16.19",
     "styled-components": "^4.2.0",
     "styled-normalize": "^8.0.6"
   },

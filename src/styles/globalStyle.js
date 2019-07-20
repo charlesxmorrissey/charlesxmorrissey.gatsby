@@ -1,5 +1,6 @@
 import { normalize } from 'styled-normalize'
 import { createGlobalStyle } from 'styled-components'
+import colors from './colors'
 
 export default createGlobalStyle`
   ${normalize}
@@ -17,12 +18,10 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: lightgreen;
+    background-color: ${colors.bgColor};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-    font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+    font-feature-settings: 'kern';
     font-size: 1rem;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     font-weight: normal;
     line-height: 1.3;
   }

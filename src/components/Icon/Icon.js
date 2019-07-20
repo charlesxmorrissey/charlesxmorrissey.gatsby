@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import colors from 'styles/colors'
 
 import { IconContainer } from './Icon.style'
 
@@ -15,7 +16,7 @@ Icon.propTypes = {
 }
 
 Icon.defaultProps = {
-  fillColor: '#000',
+  fillColor: colors.black,
 }
 
 export default Icon
