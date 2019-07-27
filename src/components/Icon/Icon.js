@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import colors from 'styles/colors'
 
-import { IconContainer } from './Icon.style'
+import { IconWrapper } from './Icon.style'
 
 const Icon = ({ fillColor, name }) => (
-  <IconContainer fillColor={fillColor}>
+  <IconWrapper fillColor={fillColor}>
     <use xlinkHref={`#${name}`} />
-  </IconContainer>
+  </IconWrapper>
 )
 
 Icon.propTypes = {

@@ -1,5 +1,6 @@
 import { normalize } from 'styled-normalize'
 import { createGlobalStyle } from 'styled-components'
+import { media, rem } from 'utils/helpers'
 import colors from './colors'
 
 export default createGlobalStyle`
@@ -27,6 +28,19 @@ export default createGlobalStyle`
   }
 
   h1 {
+    font-size: ${rem(36)};
     font-weight: 600;
+
+    ${media.medium`
+      font-size: ${rem(42)};
+    `}
+  }
+
+  p {
+    font-size: ${rem(18)};
+
+    ${media.medium`
+      font-size: ${rem(24)};
+    `}
   }
 `

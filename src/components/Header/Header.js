@@ -1,11 +1,9 @@
 import React from 'react'
-import { useSiteMetadata } from 'hooks'
+import { useSiteMetadata } from 'utils/useSiteMetadata'
 import Icon from 'components/Icon'
 
 import {
-  HeaderStyle,
-  HeaderTitleStyle,
-  HeaderCopyStyle,
+  HeaderWrapper,
   HeaderSocialWrapper,
   HeaderSocialLink,
 } from './Header.style'
@@ -19,9 +17,9 @@ const Header = () => {
   const { author, description, social } = useSiteMetadata()
 
   return (
-    <HeaderStyle>
-      <HeaderTitleStyle>{author}</HeaderTitleStyle>
-      <HeaderCopyStyle>{description}</HeaderCopyStyle>
+    <HeaderWrapper>
+      <h1>{author}</h1>
+      <p>{description}</p>
 
       {social && (
         <HeaderSocialWrapper>
@@ -33,7 +31,7 @@ const Header = () => {
           ))}
         </HeaderSocialWrapper>
       )}
-    </HeaderStyle>
+    </HeaderWrapper>
   )
 }
 

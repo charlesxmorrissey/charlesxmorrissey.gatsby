@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { rem } from 'utils/helpers'
 
-export const IconContainer = styled.svg`
+export const IconWrapper = styled.svg`
   fill: ${(props) => props.fillColor};
-  height: ${rem(24)};
-  width: ${rem(24)};
+  height: ${rem(20)};
+  width: ${rem(20)};
 `
