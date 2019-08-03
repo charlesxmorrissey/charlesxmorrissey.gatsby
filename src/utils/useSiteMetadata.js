@@ -11,8 +11,8 @@ export const useSiteMetadata = () => {
             title
             social {
               email
-              github
               linkedin
+              github
             }
           }
         }

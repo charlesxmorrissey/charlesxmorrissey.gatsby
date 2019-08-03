@@ -11,7 +11,7 @@ export const HeaderSocialWrapper = styled.div`
 `
 
 export const HeaderSocialLink = styled.a`
-  margin-right: ${rem(8)};
+  margin-right: ${rem(4)};
   padding: ${rem(8)};
 
   &:first-of-type {
