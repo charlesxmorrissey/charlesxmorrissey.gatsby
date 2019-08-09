@@ -2,9 +2,7 @@ import { css } from 'styled-components'
 
 // Global breakpoint sizes.
 const sizes = {
-  xlarge: 1170,
-  large: 1025,
-  medium: 1000,
+  medium: 800,
   small: 600,
 }
 

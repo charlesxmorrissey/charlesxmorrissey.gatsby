@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.header`
 export const HeaderSocialWrapper = styled.div`
   align-items: center;
   display: flex;
+  margin-left: -${rem(8)};
 `
 
 export const HeaderSocialLink = styled.a`

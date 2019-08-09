@@ -1,11 +1,8 @@
-import { normalize } from 'styled-normalize'
 import { createGlobalStyle } from 'styled-components'
 import { media, rem } from 'utils/helpers'
 import colors from './colors'
 
 export default createGlobalStyle`
-  ${normalize}
-
   html {
     box-sizing: border-box;
     font-size: 16px;
