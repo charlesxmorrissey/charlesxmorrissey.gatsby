@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { rem } from 'utils/helpers'
 
 export const HeaderWrapper = styled.header`
+  background: tomato;
   max-width: 440px;
 `
 

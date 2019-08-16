@@ -22,6 +22,11 @@ export default createGlobalStyle`
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.3;
+    margin: 0;
+  }
+
+  main {
+    display: block;
   }
 
   h1 {
