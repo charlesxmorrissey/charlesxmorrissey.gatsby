@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { media, rem } from 'utils/helpers'
+import { media } from 'utils/helpers'
 
 export const Block = styled.div`
-  padding-left: ${rem(20)};
-  padding-right: ${rem(20)};
+  padding-left: 20px;
+  padding-right: 20px;
 
   ${media.medium`
-    padding-left: ${rem(40)};
+    padding-left: 40px;
     padding-right: 0;
   `}
 `

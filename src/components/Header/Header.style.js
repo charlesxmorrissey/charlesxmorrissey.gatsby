@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { rem } from 'utils/helpers'
 
 export const HeaderWrapper = styled.header`
   max-width: 440px;
@@ -8,17 +7,17 @@ export const HeaderWrapper = styled.header`
 export const HeaderSocialWrapper = styled.div`
   align-items: center;
   display: flex;
-  margin-left: -${rem(8)};
+  margin-left: -8px;
 `
 
 export const HeaderSocialLink = styled.a`
-  margin-right: ${rem(4)};
-  padding: ${rem(8)};
+  margin-right: 4px;
+  padding: 8px;
 
   &:first-of-type {
     svg {
-      height: ${rem(24)};
-      width: ${rem(24)};
+      height: 24px;
+      width: 24px;
     }
   }
 `

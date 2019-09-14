@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { media, rem } from 'utils/helpers'
+import { media } from 'utils/helpers'
 import colors from './colors'
 
 export default createGlobalStyle`
@@ -30,19 +30,19 @@ export default createGlobalStyle`
   }
 
   h1 {
-    font-size: ${rem(36)};
+    font-size: 36px;
     font-weight: 600;
 
     ${media.medium`
-      font-size: ${rem(42)};
+      font-size: 42px;
     `}
   }
 
   p {
-    font-size: ${rem(18)};
+    font-size: 18px;
 
     ${media.medium`
-      font-size: ${rem(24)};
+      font-size: 24px;
     `}
   }
 `
