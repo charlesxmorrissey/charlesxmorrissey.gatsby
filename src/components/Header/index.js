@@ -23,12 +23,14 @@ const Header = () => {
 
       {social && (
         <HeaderSocialWrapper>
-          {Object.keys(social).map((item, i) => (
-            <HeaderSocialLink href={social[item]} key={`${item}-${i}`}>
-              <HideVisually>{item}</HideVisually>
-              <Icon name={item} />
-            </HeaderSocialLink>
-          ))}
+          {Object.keys(social).map((item, i) =>
+            social[item] ? (
+              <HeaderSocialLink href={social[item]} key={`${item}-${i}`}>
+                <HideVisually>{item}</HideVisually>
+                <Icon name={item} />
+              </HeaderSocialLink>
+            ) : null
+          )}
         </HeaderSocialWrapper>
       )}
     </HeaderWrapper>
