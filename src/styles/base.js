@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { media } from 'utils/helpers'
 
-export const Block = styled.div`
+export const Container = styled.div`
   padding-left: 20px;
   padding-right: 20px;
 

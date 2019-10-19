@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import GlobalStyle from 'styles/globalStyle'
-import { Block } from 'styles/base'
+import { Container } from 'styles/base'
 
 const Layout = ({ children }) => (
   <>
     <GlobalStyle />
-    <Block as="main">{children}</Block>
+    <Container as="main">{children}</Container>
   </>
 )
 
