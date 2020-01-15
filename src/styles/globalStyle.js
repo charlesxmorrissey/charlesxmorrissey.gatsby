@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
+
 import { media } from 'utils/helpers'
+
 import colors from './colors'
 
 export default createGlobalStyle`

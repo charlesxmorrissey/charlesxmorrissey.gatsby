@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { useSiteMetadata } from 'utils/useSiteMetadata'
 import Icon from 'components/Icon'
 
@@ -9,9 +10,7 @@ import {
 } from './Header.style'
 import { HideVisually } from 'styles/base'
 
-import 'svg/email.svg'
-import 'svg/github.svg'
-import 'svg/linkedin.svg'
+import 'svg'
 
 const Header = () => {
   const { author, description, social } = useSiteMetadata()
