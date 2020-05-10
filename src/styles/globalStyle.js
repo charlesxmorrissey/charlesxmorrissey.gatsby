@@ -19,6 +19,7 @@ export default createGlobalStyle`
 
   body {
     background-color: ${colors.bgColor};
+    transition: background ease 3s;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     font-feature-settings: 'kern';
     font-size: 1rem;
