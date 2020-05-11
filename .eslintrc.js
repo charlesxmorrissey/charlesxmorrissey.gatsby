@@ -27,18 +27,19 @@ module.exports = {
     sourceType: 'module',
   },
 
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'react-hooks', 'prettier'],
 
   extends: ['standard', 'standard-react', 'prettier', 'prettier/react'],
 
   rules: {
     'no-console': ['error', { allow: ['warn', 'error'] }],
-    'jsx-quotes': ['error', 'prefer-double'],
-    quotes: [
-      'error',
-      'single',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-unused-vars': 2,
+    'prefer-const': [
+      2,
       {
-        allowTemplateLiterals: true,
+        destructuring: 'any',
+        ignoreReadBeforeAssign: false,
       },
     ],
     'react/jsx-filename-extension': [
@@ -47,6 +48,6 @@ module.exports = {
         extensions: ['.js', '.jsx'],
       },
     ],
-    semi: ['error', 'never'],
+    'react-hooks/rules-of-hooks': 'error',
   },
 }
